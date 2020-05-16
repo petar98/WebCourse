@@ -1,0 +1,189 @@
+#panel-content {
+    border: 2px solid #34495e;
+    background-color: #ececec;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0px 25px 25px;
+}
+
+#panel-forms {
+    display: table;
+}
+
+#heading-text {
+    color: #34495e;
+    font-size: 2em;
+}
+
+#deading #inner-text {
+    font-size: large;
+}
+
+.panel-heading {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0;
+}
+
+.panels {
+    margin-top: 10px;
+    padding: 10px 10px 0px 10px;
+}
+
+.panels fieldset > input {
+    margin-bottom: 10px;
+    height: 25px;
+    width: 20rem;
+    display: block;
+}
+
+#register-form fieldset, #login-form fieldset {
+    border: 0;
+    padding: 0px;
+    width: 20rem;
+}
+
+#register-inputs legend {
+    color: #34495e;
+}
+
+section {
+    display: table-cell;
+    width: 20rem;
+}
+
+#register-panel {
+    padding-left: 0;
+}
+
+#login-panel {
+    background-color: #34495e;
+    color: #ffffff;
+    margin-right: 4%;
+}
+
+input {
+    display: block;
+}
+
+#remember{
+    display: inline-block;
+}
+
+.panel-buttons {
+    float: right;
+    height: 35px;
+    font-weight: bold;
+}
+
+#register-button {
+    color: #34495e;
+    border: 5px solid #34495e;
+}
+
+#login-button {
+    display: block;
+    width: 8rem;
+    color: #ffffff;
+    border: 5px solid #ffffff;
+    background-color: #34495e;
+    display: inline-block;
+}
+
+#register-button:hover {
+    cursor: pointer;
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+#login-button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #34495e;
+}
+
+#remember-wrapper {
+    display: inline-block;
+}
+
+#remember-text {
+    font-size: medium;
+    display: inline-block;
+}
+
+#remember-wrapper input {
+    transform: scale(1.4);
+    color: #34495e;
+}
+
+#forgotten-password {
+    margin-top: 10px;
+    color: #ececec;
+    font-size: medium;
+    float: right;
+    clear: right;
+}
+
+
+
+.remember-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.remember-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #34495e;
+    border: 2px solid #ffffff;
+}
+
+.remember-label:hover input ~ .checkmark {
+    background-color: #ffffff;
+}
+
+
+.remember-label input:checked ~ .checkmark {
+    background-color: #34495e;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.remember-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.remember-label .checkmark:after {
+    left: 5px;
+    width: 4px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

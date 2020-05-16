@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="panel-content">
+        <header id="heading">
+            <h2 id="heading-text">Потребителски панел</h2>
+            <p id="inner-text">За да се запишете за курс създайте нов акаунт или влезте в съществуващ такъв.</p>
+        </header>
+        <div id="panel-forms">
+        <section id="register-panel" class="panels">
+            <article id="register-content">
+                <form action="" id="register-form">
+                    <fieldset id="register-inputs">
+                        <legend class="panel-heading">РЕГИСТРАЦИЯ</legend>
+                        <input type="text" name="register-username" id="register-username" placeholder="Потребителско име" required>
+                        <input type="email" name="register-email" id="register-email" placeholder="E-mail" required>
+                        <input type="password" name="register-password" id="register-password" placeholder="Парола" required>
+                        <input type="password" name="register-password-confirm" id="register-password-confirm" placeholder="Потвърди паролата" required>
+                        <button type="submit" id="register-button" class="panel-buttons">Регистрирай се</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+
+        <section id="login-panel" class="panels">
+            <article id="login-content">
+                <form action="" id="login-form">
+                    <fieldset id="login-inputs">
+                        <legend class="panel-heading">ВХОД</legend>
+                        <input type="text" name="login-username" id="login-username" placeholder="Потребителско име" required>
+                        <input type="password" name="login-password" id="login-password" placeholder="Парола" required>
+                        <div id="remember-wrapper">
+                            <label for="remember" id="remember-text" class="remember-label">Запомняне?
+                                <input type="checkbox" id="remember" name="remember" value="remember">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <button type="submit" id="login-button" class="panel-buttons">Влез</button>
+                        <a href="#" target="_blank" id="forgotten-password">Забравена парола</a>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        </div>
+    </main>
+</body>
+</html>
